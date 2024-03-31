@@ -10832,9 +10832,23 @@ textarea.form-control-lg {
   max-width: 20rem;
 }
 .features-icons .features-icons-item .features-icons-icon {
-  height: 7rem;
+  height: 6rem;
 }
 .features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+
+.press {
+  padding-top: 3rem;
+  padding-bottom: 0rem;
+}
+.press .press-item {
+  max-width: 20rem;
+}
+.press .press-item .press-item-icon {
+  height: 6rem;
+}
+.press .press-item .pressitem-icon i {
   font-size: 4.5rem;
 }
 
