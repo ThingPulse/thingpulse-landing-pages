@@ -10936,3 +10936,14 @@ footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #aaa;
+}
+.carousel-indicators [data-bs-target]  {
+  background-color: #000;
+}
+.date-light {
+  color:#aaaaaa;
+
+}
