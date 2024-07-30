@@ -24,6 +24,8 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="preload" fetchpriority="high" as="image" href="/assets/img/ckg-masthead.webp" type="image/webp">
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js"></script>
+        <script src="https://www.youtube.com/iframe_api" id="iframe-demo"></script>
     </head>
     <body>
         <!-- Google Tag Manager (noscript) -->
@@ -103,7 +105,13 @@
                 <div class="row g-0">
                     <div class="col-lg-6 order-lg-1 text-white">
                         <div class="ratio ratio-16x9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cMZspYxSJfI?si=ZFEcN9k6eIy6y3pX?rel=0&autoplay=1&mute=1&loop=1&playlist=cMZspYxSJfI" allowfullscreen></iframe>
+                            <lite-youtube
+                                class="ytvideo" 
+                                videoid="cMZspYxSJfI" 
+                                autoload
+                                params="autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=cMZspYxSJfI"
+                                >
+                            </lite-youtube>
                         </div>
                     </div>
                     <div class="col-lg-6 order-lg-2 my-auto showcase-text">
@@ -117,7 +125,13 @@
                 <div class="row g-0">
                     <div class=" col-lg-6 order-lg-2 text-white">
                         <div class="ratio ratio-16x9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AL6-BsUyV6k?si=MAnbPbw0a9jHHL_V?rel=0&autoplay=1&mute=1&loop=1&playlist=AL6-BsUyV6k" allowfullscreen></iframe>
+                            <lite-youtube
+                                class="ytvideo" 
+                                videoid="AL6-BsUyV6k" 
+                                autoload
+                                params="autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=AL6-BsUyV6k"
+                                >
+                            </lite-youtube>
                         </div>
                         </div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
