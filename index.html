@@ -26,6 +26,7 @@
         <link rel="preload" fetchpriority="high" as="image" href="/assets/img/ckg-masthead.webp" type="image/webp">
         <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js"></script>
     </head>
+    <script src="https://www.youtube.com/iframe_api" id="iframe-demo"></script>
     <body>
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLN7G96G"
@@ -125,11 +126,12 @@
                     <div class="col-lg-6 order-lg-1 text-white">
                         <div class="ratio ratio-16x9">
                             <lite-youtube
-                                id="test-jsapi" 
+                                class="ytvideo" 
                                 videoid="QxjvsX2-O5E" 
-                                playlistid="PLnNQimzCW6cuJh-_iVO0jNFnXjMFBHPcO" 
                                 autoload
-                                params="autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1"></lite-youtube>
+                                params="autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=QxjvsX2-O5E&start=0&end=36"
+                                >
+                            </lite-youtube>
                         </div>
                     </div>
                     <div class="col-lg-6 order-lg-2 my-auto showcase-text">
@@ -145,7 +147,13 @@
                 <div class="row g-0">
                     <div class=" col-lg-6 order-lg-2 text-white">
                         <div class="ratio ratio-16x9">
-                            <lite-youtube videoid="ophLdG92JLo" autoload></lite-youtube>
+                            <lite-youtube 
+                                class="ytvideo" 
+                                videoid="ophLdG92JLo" 
+                                autoload
+                                params="autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=ophLdG92JLo"
+                                >
+                            </lite-youtube>
                         </div>
                         </div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
@@ -163,7 +171,11 @@
                 <div class="row g-0">
                     <div class="col-lg-6 order-lg-1 text-white showcase-img">
                         <div class="ratio ratio-16x9">
-                            <lite-youtube videoid="Tor_OHvYVv4" autoload></lite-youtube>
+                            <lite-youtube
+                                class="ytvideo"  
+                                videoid="Tor_OHvYVv4" 
+                                params="autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=Tor_OHvYVv4"
+                                autoload></lite-youtube>
                         </div>
                     </div>
                     <div class="col-lg-6 order-lg-2 my-auto showcase-text">
@@ -558,34 +570,5 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-
-        <script type="text/javascript">
-            let player;
-      
-            function setupYT() {
-              player = new YT.Player(
-                document
-                  .querySelector('#test-jsapi')
-                  .shadowRoot.querySelector('iframe'),
-                {
-                  events: {
-                    onReady: onPlayerReady,
-                  },
-                }
-              );
-            }
-      
-            function onPlayerReady() {
-              player.playVideo();
-            }
-      
-            document.addEventListener('liteYoutubeIframeLoaded', () => {
-              try {
-                setupYT();
-              } catch(e) {
-                setTimeout(setupYT, 100);
-              }
-            }, false);
-          </script>
     </body>
 </html>
