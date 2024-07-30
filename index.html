@@ -24,6 +24,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="preload" fetchpriority="high" as="image" href="/assets/img/ckg-masthead.webp" type="image/webp">
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js"></script>
     </head>
     <body>
         <!-- Google Tag Manager (noscript) -->
@@ -123,7 +124,12 @@
                 <div class="row g-0">
                     <div class="col-lg-6 order-lg-1 text-white">
                         <div class="ratio ratio-16x9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QxjvsX2-O5E?si=gwa1v5Y6a1bPerHN&rel=0&autoplay=1&mute=1&loop=1&playlist=QxjvsX2-O5E&start=0&end=36" allowfullscreen></iframe>
+                            <lite-youtube
+                                id="test-jsapi" 
+                                videoid="QxjvsX2-O5E" 
+                                playlistid="PLnNQimzCW6cuJh-_iVO0jNFnXjMFBHPcO" 
+                                autoload
+                                params="autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1"></lite-youtube>
                         </div>
                     </div>
                     <div class="col-lg-6 order-lg-2 my-auto showcase-text">
@@ -139,7 +145,7 @@
                 <div class="row g-0">
                     <div class=" col-lg-6 order-lg-2 text-white">
                         <div class="ratio ratio-16x9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ophLdG92JLo?si=WJm2ZVC-C4aj-PuN&rel=0&autoplay=1&mute=1&loop=1&playlist=ophLdG92JLo" allowfullscreen></iframe>
+                            <lite-youtube videoid="ophLdG92JLo" autoload></lite-youtube>
                         </div>
                         </div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
@@ -157,7 +163,7 @@
                 <div class="row g-0">
                     <div class="col-lg-6 order-lg-1 text-white showcase-img">
                         <div class="ratio ratio-16x9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Tor_OHvYVv4?si=BeSbN4kkshXKL1J-&autoplay=1&mute=1&loop=1&playlist=Tor_OHvYVv4" allowfullscreen></iframe>
+                            <lite-youtube videoid="Tor_OHvYVv4" autoload></lite-youtube>
                         </div>
                     </div>
                     <div class="col-lg-6 order-lg-2 my-auto showcase-text">
@@ -557,5 +563,33 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script type="text/javascript">
+            let player;
+      
+            function setupYT() {
+              player = new YT.Player(
+                document
+                  .querySelector('#test-jsapi')
+                  .shadowRoot.querySelector('iframe'),
+                {
+                  events: {
+                    onReady: onPlayerReady,
+                  },
+                }
+              );
+            }
+      
+            function onPlayerReady() {
+              player.playVideo();
+            }
+      
+            document.addEventListener('liteYoutubeIframeLoaded', () => {
+              try {
+                setupYT();
+              } catch(e) {
+                setTimeout(setupYT, 100);
+              }
+            }, false);
+          </script>
     </body>
 </html>
