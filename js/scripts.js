@@ -1,30 +1,27 @@
-let players = [];
 
-function setupYT() {
-  const ytElements = document.querySelectorAll('.ytvideo');
 
-  ytElements.forEach((element, index) => {
-    const iframe = element.shadowRoot.querySelector('iframe');
-    if (iframe) {
-      players[index] = new YT.Player(iframe, {
-        events: {
-          onReady: onPlayerReady(index),
-        },
-      });
+let player;
+
+function setupYT(element) {
+  player = new YT.Player(
+    element.target
+      .shadowRoot.querySelector('iframe'),
+    {
+      events: {
+        onReady: onPlayerReady,
+      },
     }
-  });
+  );
 }
 
-function onPlayerReady(index) {
-  return function() {
-    players[index].playVideo();
-  };
+function onPlayerReady(event) {
+    event.target.playVideo();
 }
 
-document.addEventListener('liteYoutubeIframeLoaded', () => {
+document.addEventListener('liteYoutubeIframeLoaded', (element) => {
   try {
-    setupYT();
-  } catch (e) {
-    setTimeout(setupYT, 100);
+    setupYT(element);
+  } catch(e) {
+    setTimeout(setupYT(element), 100);
   }
 }, false);
