@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-TLN7G96G');</script>
+                <!-- End Google Tag Manager -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>ESP32 ePulse Feather C6 (LP)</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLN7G96G"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        <!-- Navigation-->
+        <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#!">ESP32-C6 ePulse Feather C6 by ThingPulse</a>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="text-center text-white">
+                            <!-- Page heading-->
+                            <h1 class="mb-5">The ESP32-C6 <BR/>ePulse Feather C6 Dev board is here!</h1>
+                            <a href="https://thingpulse.com/product/epulse-feather-low-power-esp32-c6/" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Start Prototyping Now for USD<s>14.95!</s>12.95</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Icons Grid-->
+        <section class="features-icons bg-light text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi-speedometer m-auto text-primary"></i></div>
+                            <h3>Low Battery Consumption</h3>
+                            <p class="lead mb-0">Down to 18uA in Deep Sleep!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi-usb-c m-auto text-primary"></i></div>
+                            <h3>USB-C</h3>
+                            <p class="lead mb-0">Type C for charging and programming!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi-battery-half m-auto text-primary"></i></div>
+                            <h3>Fuel Gauge</h3>
+                            <p class="lead mb-0">MAX17048 Fuel Gauge chip to measure state of charge over I2C!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Image Showcases-->
+        
+        <section class="showcase">
+            <div class="container-fluid bg-light p-0">
+                <div class="row g-0">
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/ePulseFeatherPinoutSquare.jpg'); background-position: center;"></div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <h2>Versatile</h2>
+                        <p class="lead mb-0">
+                            With up to 20 available GPIO pins this board can be used for IoT, wearables, and many other applications. It is also compatible with FeatherWing boards.
+                        </p>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/enhanced-connectivity.png'); background-position: right;"></div>
+                    <div class="col-lg-6 my-auto showcase-text">
+                        <h2>Enhanced Connectivity</h2>
+                        <p class="lead mb-0">
+                            The ESP32-C6 supports WiFi 6, Bluetooth 5.0, Zigbee, and Thread.
+                        </p>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/ePulseFeatherC6Breadboard-real.jpg')"></div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <h2>Developer Friendly</h2>
+                        <p class="lead mb-0">
+                            The ePulse Feather C6 is designed to be developer friendly. It has a breadboard friendly design and is compatible with the Arduino IDE and PlatformIO.
+                            <p>
+                                <img src="assets/img/arduino_and_platformio_small.png" alt="Arduino" class="img-fluid"/>
+                            </p>
+                        </p>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <video class="col-lg-6 order-lg-1 text-white showcase-img" autoplay loop id="myVideo">
+                        <source src="assets/video/epulse-feather.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="col-lg-6 order-lg-2 my-auto showcase-text">
+                        <h2>Extensive Documentation</h2>
+                        <p class="lead mb-0">
+                            ThingPulse provides code examples, 3d models, schematics, and a comprehensive user manual to get you started.
+                            <a href="https://github.com/ThingPulse/thingpulse-devices/tree/master/epulse-feather-c6" target="_blank" rel="noopener noreferrer">More on Github</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Press Grid-->
+        <section class="features-icons bg-light text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex">
+                                <a href="https://www.hackster.io/news/the-thingpulse-epulse-feather-c6-risc-v-development-board-promises-an-18-a-low-power-sleep-mode-9fba6bbe4351" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/img/Hackster_4C.png" alt="Make-Magazine" class="img-fluid">
+                                </a>
+                            </div>
+ 
+                            <p class="lead mb-0">
+                                Designed for bursty battery-powered Internet of Things (IoT) projects, this low-power dev board can deliver a long runtime per charge.
+                            
+                            </p>
+                            <p class="lead mb-0">
+                                <a href="https://www.hackster.io/news/the-thingpulse-epulse-feather-c6-risc-v-development-board-promises-an-18-a-low-power-sleep-mode-9fba6bbe4351" target="_blank" rel="noopener noreferrer">More...</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex">
+                                <a href="https://www.cnx-software.com/2024/03/06/epulse-feather-c6-esp32-c6-development-board-adafruit-feather-lipo-battery/" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/img/cnx-software.jpg" alt="Make-Magazine" class="img-fluid">
+                                </a>
+                            </div>
+ 
+                            <p class="lead mb-0">
+                                Just like its predecessor called ePulse Feather, the ePulse Feather C6 is optimized for low power consumption.
+                            
+                            </p>
+                            <p class="lead mb-0">
+                                <a href="https://www.cnx-software.com/2024/03/06/epulse-feather-c6-esp32-c6-development-board-adafruit-feather-lipo-battery/" target="_blank" rel="noopener noreferrer">More...</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex">
+                                <a href="https://www.heise.de/news/ePulse-Feather-ESP-C6-Zigbee-WiFi-BLE-Thread-und-Matter-9646111.html" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/img/make-de.png" alt="Make-Magazine" class="img-fluid">
+                                </a>
+                            </div>
+ 
+                            <p class="lead mb-0">
+                                Das Entwicklungsboard mit einem ESP-C6 Chip bietet Komfort für Entwicklung und Prototyping von IoT-Projekten, die auf lange Akkulaufzeiten optimiert sind.
+                            
+                            </p>
+                            <p class="lead mb-0">
+                                <a href="https://www.heise.de/news/ePulse-Feather-ESP-C6-Zigbee-WiFi-BLE-Thread-und-Matter-9646111.html" target="_blank" rel="noopener noreferrer">More...</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Call to Action-->
+        <section class="call-to-action text-white text-center" id="signup">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <h2 class="mb-4">Ready to get tinker?</h2>
+                        <a href="https://thingpulse.com/product/epulse-feather-low-power-esp32-c6/" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Start Tinkering Now for USD<s>14.95!</s>12.95</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+               <!-- Testimonials-->
+               <section class="testimonials text-center bg-light">
+                <div class="container">
+                    <h2 class="mb-5">Frequently Asked Questions</h2>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                                <h5>What is the ePulse Feather C6?</h5>
+                                <p class="font-weight-light mb-0">
+                                    The ePulse Feather C6 is a low-power ESP32-C6 development board designed for IoT projects. It features the a MAX17048 fuel gauge chip, USB-C charging, and programming, and a breadboard-friendly design. The board is compatible with the Arduino IDE and PlatformIO, making it an excellent choice for developers and makers.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                                <h5>Which tools/ devices are required to use the ePulse Feather C6?</h5>
+                                <p class="font-weight-light mb-0">
+                                    To get started with the ePulse Feather C6, you'll need a USB-C cable for charging and programming, a computer with the Arduino IDE or PlatformIO installed, and a breadboard for prototyping. The board is compatible with FeatherWing boards, allowing you to expand its functionality with additional modules and sensors.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                                <h5>Which programming skills are required?</h5>
+                                <p class="font-weight-light mb-0">
+                                    The ePulse Feather C6 is designed to be beginner-friendly, making it an excellent choice for makers and developers of all skill levels. If you're new to programming, the Arduino IDE provides an easy-to-use interface for writing and uploading code to the board. For more advanced users, PlatformIO offers additional features and tools for managing larger projects.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                                <h5>How long does shipping take?</h5>
+                                <p class="font-weight-light mb-0">
+                                    Shipping to the US, Canada, Europe, and Australia typically takes between 5-10 business days. Shipping to other countries may take longer. Once your order has been dispatched from the warehouse, you'll receive a tracking number to monitor the status of your shipment.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                                <h5>Do you offer educational discounts?</h5>
+                                <p class="font-weight-light mb-0">
+                                    Absolutely! In addition to bulk discounts, we are pleased to offer educational discounts to support the learning endeavors of students and educators. For more information, please reach out to us via email at info [at] thingpulse.com.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                                <h5>Where are you guys from?</h5>
+                                <p class="font-weight-light mb-0">
+                                    We are a company based in Zurich, Switzerland. Specializing in open-source hardware and software, we cater to makers and educators alike, providing innovative tools and resources for their projects and endeavors.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Footer-->
+        <footer class="footer bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                        <p class="text-muted small mb-4 mb-lg-0">&copy; ThingPulse GmbH. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item me-4">
+                                <a href="https://www.facebook.com/thingpulse"><i class="bi-facebook fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item me-4">
+                                <a href="https://twitter.com/thingpulse"><i class="bi-twitter fs-3"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
