@@ -1,0 +1,3 @@
+RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} ^index-.*\.html$
+RewriteRule ^index-.*\.html$ index.html [L]
