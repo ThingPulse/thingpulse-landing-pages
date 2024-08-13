@@ -599,7 +599,13 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
+
+}
+
+.foreground-img {
+  position: relative;
+  z-index: 1;
+  width: 120%; /* Adjust as needed */
   height: auto;
 }
 
@@ -10924,15 +10930,12 @@ section {
 }
 
 .device[data-device=iPhoneX][data-orientation=portrait][data-color=black] .screen {
-  top: 3.1855955679%;
-  left: 6.8870523416%;
-  width: 86.2258953168%;
-  height: 93.6288088643%;
+
 }
 
 .device[data-device=iPhoneX][data-orientation=portrait][data-color=black]::after {
   content: "";
-  background-image: url("../assets/img/portrait_black.png");
+  
 }
 
 .device[data-device=iPhoneX][data-orientation=portrait][data-color=black] .button {
