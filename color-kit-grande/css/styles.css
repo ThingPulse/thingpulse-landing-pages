@@ -10855,7 +10855,7 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/ckg-masthead.webp") no-repeat center center;
+  background: url("../assets/img/highschool-teen.webp") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -10916,7 +10916,7 @@ header.masthead h1, header.masthead .h1 {
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/ElectronicsLab.webp") no-repeat center center;
+  background: url("../assets/img/college-student.webp") no-repeat center center;
   background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -10976,6 +10976,38 @@ footer.footer {
   padding: 8px 12px;
   position: absolute;
   top: 0;
+}
+
+.check-bullet, .hand-bullet {
+  list-style: none; /* Remove default bullets */
+  padding-left: 0; /* Remove default padding */
+  padding-bottom: 30px;
+}
+
+.check-bullet li, .hand-bullet li {
+  position: relative; /* Create a positioning context */
+  padding-left: 25px; /* Adjust padding to accommodate icon */
+  margin-bottom: 10px; /* Add spacing between items */
+}
+
+.check-bullet li::before {
+  content: "\F407"; /* Unicode value for the Bootstrap icon (e.g., check icon) */
+  font-family: bootstrap-icons !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #007bff; /* Customize icon color */
+  font-size: 1.2em; /* Customize icon size */
+}
+
+.hand-bullet li::before {
+  content: "\F26B"; /* Unicode value for the Bootstrap icon (e.g., check icon) */
+  font-family: bootstrap-icons !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #007bff; /* Customize icon color */
+  font-size: 1.2em; /* Customize icon size */
 }
 
 
