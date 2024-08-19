@@ -10856,8 +10856,8 @@ html {
 
 aside,
 section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .app-badge {
@@ -11191,4 +11191,12 @@ footer a:hover, footer a:active, footer a:focus {
   top: 0;
   color: #007bff; /* Customize icon color */
   font-size: 1.2em; /* Customize icon size */
+}
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
 }
