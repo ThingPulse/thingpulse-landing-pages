@@ -10852,7 +10852,17 @@ textarea.form-control-lg {
   font-size: 4.5rem;
 }
 
-header.masthead {
+
+
+header.masthead{
+  position: relative;
+  background-color: #343a40;
+  background: url("../assets/img/ckg-masthead.webp") no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+header.masthead-stem  {
   position: relative;
   background-color: #343a40;
   background: url("../assets/img/highschool-teen.webp") no-repeat center center;
