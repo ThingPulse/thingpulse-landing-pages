@@ -10825,8 +10825,14 @@ textarea.form-control-lg {
   }
 }
 .features-icons {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+@media (max-width: 768px) {
+  .features-icons {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 .features-icons .features-icons-item {
   max-width: 20rem;
