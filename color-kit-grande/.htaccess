@@ -3,5 +3,5 @@ RewriteEngine On
 
 RewriteBase /products/color-kit-grande/ 
 
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+index_b\.html [NC]
+RewriteCond %{THE_REQUEST} ^index_b\.html [NC]
 RewriteRule ^index_b\.html$ /index_b.php [L,QSA]
