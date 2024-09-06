@@ -46,7 +46,7 @@
                         <div class="text-center text-white">
                             <!-- Page heading-->
                             <h1 class="mb-5">Spark Your Creativity: The ESP32 Color Kit Grande!</h1>
-                            <a href="https://thingpulse.com/cart/?add-to-cart=4354&utm_source=google&utm_medium=pmax&utm_campaign=ckg&utm_content=top_cta" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">
+                            <a href="https://thingpulse.com/cart/?add-to-cart=4354&<?php echo $_SERVER['QUERY_STRING']; ?>" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">
                                 Buy Now! 39.90USD!
                             </a>
                         </div>
@@ -537,9 +537,6 @@
                 </div>
             </div>
         </footer>
-        <?php
-        echo 'Now: '. time();
-        ?>
 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
