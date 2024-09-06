@@ -6,4 +6,4 @@ RewriteBase /products/color-kit-grande/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^index\.html$ index.php [L,QSA]
-
+RewriteRule ^index_b\.html$ index.php [L,QSA]
