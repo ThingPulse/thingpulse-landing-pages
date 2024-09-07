@@ -7,3 +7,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^index\.html$ index.php [L,QSA]
 RewriteRule ^index_b\.html$ index.php [L,QSA]
+RewriteRule ^index_de\.html$ index_de.php [L,QSA]
+RewriteRule ^stem\.html$ stem.php [L,QSA]
