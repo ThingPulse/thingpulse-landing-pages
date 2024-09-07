@@ -2,6 +2,7 @@
     $incomingParams = $_SERVER['QUERY_STRING'];
     if (isset($incomingParams)) {
         $incomingParams = "&" . $incomingParams;
+        echo "isset";
     }
     $queryParams = $incomingParams . "&utm_source=google&utm_medium=pmax&utm_campaign=ckg_de" ;
 ?>
