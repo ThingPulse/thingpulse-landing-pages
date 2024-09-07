@@ -1,6 +1,6 @@
 <?php 
     $incomingParams = $_SERVER['QUERY_STRING'];
-    if (isset($incomingParams)) {
+    if (!empty($incomingParams)) {
         $incomingParams = "&" . $incomingParams;
         echo "isset";
     }
