@@ -119,7 +119,7 @@
                             und Deine Lötfähigkeiten zu verbessern.
                         </p>
                         <div class="mt-3">
-                            <a href="https://thingpulse.com/product/esp32-wifi-color-display-kit-grande/?utm_source=google&utm_medium=pmax&utm_campaign=ckg_de&utm_content=stem_cta" type="button" class="btn btn-primary btn-sm">Mehr Infos</a>
+                            <a href="https://thingpulse.com/product/esp32-wifi-color-display-kit-grande/?p=1<?php echo $queryParams; ?>" type="button" class="btn btn-primary btn-sm">Mehr Infos</a>
                         </div>
                     </div>
                 </div>
@@ -162,7 +162,7 @@
                             Beginne mit den einfachen Bauteilen und arbeite Dich zu den anspruchsvolleren vor. Die Anleitung führt Dich durch den gesamten Prozess.
                         </p>
                         <div class="mt-3">
-                            <a href="https://thingpulse.com/product/esp32-wifi-color-display-kit-grande/?utm_source=google&utm_medium=pmax&utm_campaign=ckg_de&utm_content=soldering_cta" type="button" class="btn btn-primary btn-sm">Mehr Infos</a>
+                            <a href="https://thingpulse.com/product/esp32-wifi-color-display-kit-grande/?p=1<?php echo $queryParams; ?>" type="button" class="btn btn-primary btn-sm">Mehr Infos</a>
                         </div>
                     </div>
                 </div>
@@ -171,7 +171,7 @@
                     <div class="col-lg-6 order-lg-1 text-white showcase-img" style="background-image: url('assets/img/BatteryTop.webp'); background-position: center;"></div>
                     <div class="col-lg-6 order-lg-2 my-auto showcase-text text-white text-center">
                         <h1 class="mb-3">Nur Für kurze Zeit: <BR/>Jetzt Bestellen und diese 900mAh Batterie gratis dazu bekommen</h1>
-                        <a href="https://thingpulse.com/cart/?multiple-item-to-cart=4354|6327&coupon=ckglipofree&utm_source=google&utm_medium=pmax&utm_campaign=ckg_de&utm_content=top_cta" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">
+                        <a href="https://thingpulse.com/cart/?multiple-item-to-cart=4354|6327&coupon=ckglipofree&<?php echo $queryParams; ?>" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">
                             Jetzt Bestellen! 39.90EUR
                         </a>
                         <div class="text-left text-white font-alt mb-4 mt-3">
@@ -202,7 +202,7 @@
                             ESP32 ePulse Feather Entwicklungsboard, Grove-Stecker, On/Off Schalter sowie weibliche und männliche Header-Pins.
                         </p>
                         <div class="mt-3">
-                            <a href="https://thingpulse.com/product/esp32-wifi-color-display-kit-grande/?utm_source=google&utm_medium=pmax&utm_campaign=ckg_de&utm_content=component_cta" type="button" class="btn btn-primary btn-sm">Ich will mehr wissen!</a>
+                            <a href="https://thingpulse.com/product/esp32-wifi-color-display-kit-grande/?p=1<?php echo $queryParams; ?>" type="button" class="btn btn-primary btn-sm">Ich will mehr wissen!</a>
                         </div>
                     </div>
                 </div>
@@ -447,12 +447,12 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
                         <h1 class="mb-3">Dein Color Kit Grande wartet auf Dich!</h1>
-                        <a href="https://thingpulse.com/cart/?add-to-cart=4354&utm_source=google&utm_medium=pmax&utm_campaign=ckg_de&utm_id=20693735939" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">
+                        <a href="https://thingpulse.com/cart/?add-to-cart=4354&<?php echo $queryParams; ?>" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">
                             Jetzt Bestellen! EUR 39.90!
                         </a>
                         <div class="text-left text-white font-alt mb-4 mt-3">
                             Noch Nicht Überzeugt?
-                            <a class="text-white-underline" href="https://thingpulse.com/product/esp32-wifi-color-display-kit-grande/?utm_source=google&utm_medium=pmax&utm_campaign=gateway&utm_content=top_cta">Mehr Erfahren</a>
+                            <a class="text-white-underline" href="https://thingpulse.com/product/esp32-wifi-color-display-kit-grande/?p=1<?php echo $queryParams; ?>">Mehr Erfahren</a>
                         </div>
                     </div>
                 </div>
