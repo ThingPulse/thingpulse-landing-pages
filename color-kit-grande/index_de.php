@@ -52,13 +52,9 @@
                         <div class="text-center text-white">
                             <!-- Page heading-->
                             <h1 class="mb-5">Das ESP32 Color Kit Grande: Dein Innovativer Elektronik-Bausatz!</h1>
-                            <a href="https://thingpulse.com/cart/?multiple-item-to-cart=4354|6327&coupon=ckglipofree<?php echo $queryParams; ?>" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">
+                            <a href="https://thingpulse.com/cart/?add-to-cart=4354<?php echo $queryParams; ?>" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">
                                 Jetzt Bestellen! 39.90 EUR!
                             </a>
-                            <h4 class="text-left text-white font-alt mb-4 mt-3">
-                                Nur Für kurze Zeit: <BR/>Bestellst Du jetzt gibt es die 900mAh Batterie gratis dazu!<BR/>
-                                Coupon Code: ckglipofree
-                            </h4>
                         </div>
                     </div>
                 </div>
@@ -168,15 +164,11 @@
                 </div>
 
                 <div class="row g-0 bg-primary">
-                    <div class="col-lg-6 order-lg-1 text-white showcase-img" style="background-image: url('assets/img/BatteryTop.webp'); background-position: center;"></div>
-                    <div class="col-lg-6 order-lg-2 my-auto showcase-text text-white text-center">
-                        <h1 class="mb-3">Nur Für kurze Zeit: <BR/>Jetzt Bestellen und diese 900mAh Batterie gratis dazu bekommen</h1>
-                        <a href="https://thingpulse.com/cart/?multiple-item-to-cart=4354|6327&coupon=ckglipofree<?php echo $queryParams; ?>" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">
+                    <div class="col-lg-12 order-lg-2 my-auto showcase-text text-white text-center">
+                        <h1 class="mb-3">Noch heute bestellen und schon bald loslöten!</h1>
+                        <a href="https://thingpulse.com/cart/?add-to-cart=4354<?php echo $queryParams; ?>" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">
                             Jetzt Bestellen! 39.90EUR
                         </a>
-                        <div class="text-left text-white font-alt mb-4 mt-3">
-                            Mit der Batterie kannst Du das Kit auch ohne USB Kabel betreiben. <BR/>Coupon Code: ckglipofree
-                        </div>
                     </div>
                 </div>
                 <div class="row g-0">

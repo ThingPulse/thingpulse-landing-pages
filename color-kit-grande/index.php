@@ -170,15 +170,11 @@
                     </div>
                 </div>
                 <div class="row g-0 bg-primary">
-                    <div class="col-lg-6 order-lg-1 text-white showcase-img" style="background-image: url('assets/img/BatteryTop.webp'); background-position: center;"></div>
-                    <div class="col-lg-6 order-lg-2 my-auto showcase-text text-white text-center">
-                        <h1 class="mb-3">Limited Offer: Order Now And Get This 900mAh Battery for Free</h1>
-                        <a href="https://thingpulse.com/cart/?multiple-item-to-cart=4354|6327&coupon=ckglipofree<?php $queryParams; ?>" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">
+                    <div class="col-lg-12 order-lg-2 my-auto showcase-text text-white text-center">
+                        <h1 class="mb-3">Order Now & Start Tinkering Soon!</h1>
+                        <a href="https://thingpulse.com/cart/?add-to-cart=4354<?php echo $queryParams; ?>" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">
                             Add To Cart! 39.90USD!
                         </a>
-                        <div class="text-left text-white font-alt mb-4 mt-3">
-                            Run The Color Kit Grande Without Power Cable. <BR/>Apply Coupon Code: ckglipofree
-                        </div>
                     </div>
                 </div>
                 <div class="row g-0">
