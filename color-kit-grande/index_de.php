@@ -1,3 +1,6 @@
+<?php 
+    $queryParams = $_SERVER['QUERY_STRING'] . "&utm_source=google&utm_medium=pmax&utm_campaign=ckg_de" ;
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -45,7 +48,7 @@
                         <div class="text-center text-white">
                             <!-- Page heading-->
                             <h1 class="mb-5">Das ESP32 Color Kit Grande: Dein Innovativer Elektronik-Bausatz!</h1>
-                            <a href="https://thingpulse.com/cart/?multiple-item-to-cart=4354|6327&coupon=ckglipofree&utm_source=google&utm_medium=pmax&utm_campaign=ckg_de&utm_content=top_cta" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">
+                            <a href="https://thingpulse.com/cart/?multiple-item-to-cart=4354|6327&coupon=ckglipofree&<?php echo $queryParams; ?>" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">
                                 Jetzt Bestellen! 39.90 EUR!
                             </a>
                             <h4 class="text-left text-white font-alt mb-4 mt-3">
