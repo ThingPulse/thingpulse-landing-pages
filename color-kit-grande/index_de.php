@@ -51,7 +51,7 @@
                     <div class="col-xl-6">
                         <div class="text-center text-white">
                             <!-- Page heading-->
-                            <h1 class="mb-5">Das ESP32 Color Kit Grande: Dein Innovativer Elektronik-Bausatz!</h1>
+                            <h1 class="mb-5">Das ESP32 Color Kit Grande: Der Innovative Elektronik-Bausatz!</h1>
                             <a href="https://thingpulse.com/cart/?add-to-cart=4354<?php echo $queryParams; ?>" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">
                                 Jetzt Bestellen! 39.90 EUR!
                             </a>
