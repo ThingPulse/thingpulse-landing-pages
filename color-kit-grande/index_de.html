@@ -25,6 +25,11 @@
         <link href="css/styles.css" rel="stylesheet" />
         <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js"></script>
         <script src="https://www.youtube.com/iframe_api" id="iframe-demo"></script>
+        <style>
+            .n8n-chat:before {
+                content: "Frag Etwas!";
+            }
+        </style>
     </head>
     <body>
         <!-- Google Tag Manager (noscript) -->
@@ -624,6 +629,29 @@
                 </div>
             </div>
         </footer>
+        <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+        <script type="module">
+            import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+            createChat({
+                webhookUrl: 'https://n8n.thingpulse.com/webhook/f406671e-c954-4691-b39a-66c90aa2f103/chat',
+                initialMessages: [
+                    'Hallo! 👋',
+                    'Ich bin ThingBot, der Chat-Bot von ThingPulse. Ich wurde mit Daten zum Color Kit Grande trainiert. Was möchtest Du wissen?',
+                ],
+                defaultLanguage: 'de',
+                showWelcomeScreen: false,
+                i18n: {
+                    de: {
+                        title: 'Hallo! 👋',
+                        subtitle: "Starte einen Chat. Ich helfe Dir rund um die Uhr.",
+                        footer: '',
+                        getStarted: 'Neuer Chat',
+                        inputPlaceholder: 'Deine Frage..',
+                    },
+                },
+            });
+        </script>
 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
