@@ -32,7 +32,7 @@ jQuery(document).ready(function(){
   
   jQuery('#subscribe-form').on('submit',function(e) {  //Don't foget to change the id form
   jQuery.ajax({
-      url:'subs.php', //===PHP file name====
+      url:'https://www.thingpulse.com/sendy/subscribe', //===PHP file name====
       data:jQuery(this).serialize(),
       type:'POST',
       success:function(data){

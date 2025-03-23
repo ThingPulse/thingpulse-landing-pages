@@ -3335,7 +3335,8 @@ body.three .blog-one .blog-text span {
 .ultra i {
   width: 100px;
   height: 100px;
-  background-color: #cefa1d;
+  color: white;
+  background-color: #ff269d;
   border-radius: 50%;
   display: flex;
   align-items: center;
