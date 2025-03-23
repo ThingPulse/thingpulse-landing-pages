@@ -30,7 +30,7 @@ jQuery(document).ready(function(){
   });
   
   
-  jQuery('#subscribe-form').on('submit',function(e) {  //Don't foget to change the id form
+jQuery('#subscribe-form').on('submit',function(e) {  //Don't foget to change the id form
   jQuery.ajax({
       url:'https://www.thingpulse.com/sendy/subscribe', //===PHP file name====
       data:jQuery(this).serialize(),
@@ -64,29 +64,39 @@ jQuery(document).ready(function(){
   });
 });
 
+jQuery('#subscribe-form-1').on('submit',function(e) {  //Don't foget to change the id form
+  jQuery.ajax({
+      url:'https://www.thingpulse.com/sendy/subscribe', //===PHP file name====
+      data:jQuery(this).serialize(),
+      type:'POST',
+      success:function(data){
+        //Success Message == 'Title', 'Message body', Last one leave as it is
+	      swal({
+              title: "Thank You!",
+              text: "Your subscrition request has been submitted successfully.",
+              icon: "success",
+              showCancelButton: false,
+             showConfirmButton: false,
+            timer: 3000
+           }).then(function() {
+            jQuery('#subscribe-form-1')[0].reset();
+                   });
 
-$(document).ready(function() {
-  $('#subscribe-form-xxx').submit(function(event) {
-    event.preventDefault(); // Prevent the default form submission
-
-    // Serialize form data
-    var formData = $(this).serialize();
-
-    // Use jQuery's ajax method to post the form data
-    $.ajax({
-      type: 'POST',
-      url: $(this).attr('action'),
-      data: formData,
-      success: function(response) {
-        // Handle success: display a success message or update the page
-        console.log('Success:', response);
-        alert("Thank you for subscribing!");
       },
-      error: function(xhr, status, error) {
-        // Handle errors: display an error message
-        console.error('Error:', error);
-        alert("There was a problem with your subscription. Please try again.");
+      error:function(data){
+        //Error Message == 'Title', 'Message body', Last one leave as it is
+
+         swal({
+              title: "Oops...",
+              text: "Something went wrong :(",
+               icon: "error",
+             timer: 3000
+           });
       }
     });
+    e.preventDefault(); //This is to Avoid Page Refresh and Fire the Event "Click"
   });
-});
+
+
+
+

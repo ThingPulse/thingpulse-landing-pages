@@ -4244,3 +4244,41 @@ body.three .watch-img.three .location .data p {
     margin-top: 0;
   }
 }/*# sourceMappingURL=main.css.map */
+
+.subscribe form#subscribe-form-1 {
+  width: 90% !important;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .subscribe form#subscribe-form-1 {
+    width: 100% !important;
+  }
+}
+.subscribe form#subscribe-form-1 input {
+  background-color: rgba(255, 255, 255, 0.0901960784);
+  border: 1px solid #ffffff;
+  border-radius: 51px;
+  color: #ffffff;
+}
+.subscribe form#subscribe-form-1 input::-moz-placeholder {
+  color: #ffffff;
+}
+.subscribe form#subscribe-form-1 input::placeholder {
+  color: #ffffff;
+}
+.subscribe form#subscribe-form-1 .btn {
+  position: absolute;
+  right: 8px;
+  padding: 14px 50px;
+  top: 8px;
+}
+@media (max-width: 1400px) {
+  .subscribe form#subscribe-form-1 .btn {
+    padding: 14px 40px;
+  }
+}
+@media (max-width: 450px) {
+  .subscribe form#subscribe-form-1 .btn {
+    padding: 14px 30px;
+  }
+}
