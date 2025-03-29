@@ -1,4 +1,2 @@
-# Enable mod_rewrite
 RewriteEngine On
-
-RewriteBase /products/color-kit-grande/ 
+RewriteRule ^(.*)$ /products/color-kit-grande-set/$1 [R=301,L]
