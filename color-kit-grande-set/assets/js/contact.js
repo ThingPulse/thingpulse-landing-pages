@@ -39,7 +39,7 @@ jQuery('#subscribe-form').on('submit',function(e) {  //Don't foget to change the
         //Success Message == 'Title', 'Message body', Last one leave as it is
 	      swal({
               title: "Thank You!",
-              text: "Your subscrition request has been submitted successfully.",
+              text: "Your subscrition request has been submitted successfully. Check your confirmation email for the $5 coupon code.",
               icon: "success",
               showCancelButton: false,
              showConfirmButton: false,
@@ -73,7 +73,7 @@ jQuery('#subscribe-form-1').on('submit',function(e) {  //Don't foget to change t
         //Success Message == 'Title', 'Message body', Last one leave as it is
 	      swal({
               title: "Thank You!",
-              text: "Your subscrition request has been submitted successfully.",
+              text: "Your subscrition request has been submitted successfully. Check your confirmation email for the $5 coupon code.",
               icon: "success",
               showCancelButton: false,
              showConfirmButton: false,
