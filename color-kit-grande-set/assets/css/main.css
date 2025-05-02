@@ -4282,3 +4282,20 @@ body.three .watch-img.three .location .data p {
     padding: 14px 30px;
   }
 }
+
+.check-list {
+  list-style-type: none; /* Removes the default bullets */
+  padding-left: 0; /* Removes default left padding from the list */
+}
+
+.check-list li {
+  display: flex;
+  align-items: flex-start; /* Ensures the icon and text align properly */
+  margin-bottom: 4px; /* Adds some spacing between list items */
+}
+
+.check-list i {
+  margin-top: 5px;
+  margin-right: 10px; /* Adds spacing between the icon and the text */
+  font-size: 18px;  /*Adjusts the size of the check icon */
+}
