@@ -792,6 +792,9 @@ body.three .heading h3 span {
 body.three .heading h4 span {
   border-bottom: 3px solid #ff269d;
 }
+body.three .heading h5 span {
+  border-bottom: 3px solid #ff269d;
+}
 
 .accordion-section {
   background-color: #f5f6fa;
