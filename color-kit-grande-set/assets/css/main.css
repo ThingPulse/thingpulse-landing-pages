@@ -2149,14 +2149,15 @@ form#contact-form h3 {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  width: 90px;
-  height: 90px;
+  width: 98px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(90deg, #ed2b46, #ec4c26);
   animation: shadow-pulse 1s infinite;
-  border-radius: 50%;
+  border-radius: 20px;
+  background-color: white !important;
 }
 
 body.two .get-a-quote {
