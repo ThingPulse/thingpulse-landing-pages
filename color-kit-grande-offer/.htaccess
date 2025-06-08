@@ -1,2 +1,3 @@
 RewriteEngine On
-RewriteRule ^(.*)$ https://thingpulse.com/sp/color-kit-offer/$1 [R=301,L]
+RewriteCond %{REQUEST_URI} ^/products/color-kit-grande(/.*)?$ [NC]
+RewriteRule ^products/color-kit-grande(/.*)?$ https://thingpulse.com/sp/color-kit-offer/ [R=301,L,QSA]
