@@ -1,2 +1,3 @@
 RewriteEngine On
+RewriteRule ^index_de\.html$ https://thingpulse.com/sp/color-kit-grande-de/ [R=301,L,QSA]
 RewriteRule ^(.*)$ https://thingpulse.com/sp/color-kit-offer/ [R=301,L,QSA]
